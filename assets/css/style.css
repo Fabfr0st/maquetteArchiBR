@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "sego";
+    src: url("../font/SEGOEUI.TTF");
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+    font-family: "sego, sans-serif";
+}
+
+header nav {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2.5rem;
+    box-shadow: -3px 10px 13px 0px rgba(125, 125, 125, 0.75);
+    -webkit-box-shadow: -3px 10px 13px 0px rgba(125, 125, 125, 0.75);
+    -moz-box-shadow: -3px 10px 13px 0px rgba(125, 125, 125, 0.75);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+#menu {
+    display: none;
+}
+
+#headerImg {
+    position: relative;
+}
+
+#headerImg img {
+    width: 100%;
+}
+
+h1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+
+h1>span:last-child {
+    display: none;
+}
+
+h1>span:first-child {
+    padding: .3rem .5rem;
+    background-color: rgba(0, 0, 0, 150)
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+#gallery img {
+    width: 100%;
+}
+
+#gallery figure {
+    width: 100%;
+    position: relative;
+}
+
+#gallery figcaption {
+    position: absolute;
+    color: white;
+    background-color: black;
+    padding: .3rem .5rem;
+    font-weight: 600;
+}
+
+@media screen and (min-Width:576px) {
+    #menu {
+        display: inline;
+    }
+
+    h1>span:last-child {
+        display: inline;
+    }
+
+    #gallery figure {
+        width: 25%;
+    }
+}
