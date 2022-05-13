@@ -95,6 +95,11 @@ h1>span:first-child {
     }
 
     #gallery figure {
-        width: 25%;
+        width: 21%;
+    }
+
+    #gallery{
+        gap:1rem;
+        justify-content: center;
     }
 }
